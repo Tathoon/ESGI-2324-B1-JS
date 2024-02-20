@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculatrice</title>
 </head>
 <body>
 
-    <h1 id="titre">Projects</h1>
-    
+    <h1 id="titre" class="font2">Calculatrice</h1>
+
+    <form action="" method="get">
+
+        <div class="font3">
+           Entrer le premier nombre :
+          <input class="formS" type="int" id="nombre1" required />
+        </div>
+
+        <div style="margin-bottom: 30px;"></div>
+
+        <div class="font3">
+          Entrer le deuxième nombre :
+          <input class="formS" type="int" id="nombre2" required />
+        </div>
+
+        <div style="margin-bottom: 30px;"></div>
+
+        <div class="calcul">
+            <input type="button" class="button" id="add" value="Additionner" />
+            <input type="button" class="button" id="substract" value="Soustraire" />
+            <input type="button" class="button" id="multiply" value="Multiplier" />
+            <input type="button" class="button" id="divide" value="Diviser" />
+            <input type="button" class="button2" id="effacer" value="Effacer" />
+
+          <div style="margin-bottom: 30px;"></div>
+
+            <p id="resultat" class="font"></p>
+
+        </div>
+      </form>
+
     <script src="index.js"></script>
 </body>
 </html>

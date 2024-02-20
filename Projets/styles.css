@@ -1,0 +1,47 @@
+.button {
+    background-color: #38383d;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+  .button2 {
+    background-color: #dd1717;
+    border: none;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+  }
+
+.font {
+    font-size: 40px;
+    font-family: 'Calibri';
+  }
+
+.font2 {
+    font-size: 50px;
+    font-family: 'Calibri';
+  }
+
+.font3 {
+    font-size: 25px;
+    font-family: 'Calibri';
+  }
+
+.formS {
+    border: 2px solid rgb(70, 249, 79);
+    border-radius: 4px;
+    width: 10%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
