@@ -62,8 +62,6 @@ resetbutton.addEventListener("click", function() {
     document.getElementById("resultat").innerHTML = ""
 })
 
-
-
 const Cart = document.getElementById("Panier"); 
 const Pomme = document.getElementById("Pomme")
 
@@ -71,7 +69,7 @@ Pomme.addEventListener("click", function() {
     let newRow = Cart.insertRow()
     let newCell = newRow.insertCell()
     newCell.innerHTML = "Pomme"
-})
+});
 
 const Banane = document.getElementById("Banane")
 
@@ -119,8 +117,8 @@ RemoveItem.addEventListener("click", function() {
     document.getElementById("Panier").innerHTML = ""
 })
 
-
 console.log(addbutton)
 console.log(subbutton)
 console.log(multbutton)
 console.log(divbutton)
+console.log(compteur)
