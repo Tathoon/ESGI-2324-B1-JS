@@ -62,6 +62,64 @@ resetbutton.addEventListener("click", function() {
     document.getElementById("resultat").innerHTML = ""
 })
 
+
+
+const Cart = document.getElementById("Panier"); 
+const Pomme = document.getElementById("Pomme")
+
+Pomme.addEventListener("click", function() {
+    let newRow = Cart.insertRow()
+    let newCell = newRow.insertCell()
+    newCell.innerHTML = "Pomme"
+})
+
+const Banane = document.getElementById("Banane")
+
+Banane.addEventListener("click", function() {
+    let newRow = Cart.insertRow()
+    let newCell = newRow.insertCell()
+    newCell.innerHTML = "Banane"
+})
+
+const Orange = document.getElementById("Orange")
+
+Orange.addEventListener("click", function() {
+    let newRow = Cart.insertRow()
+    let newCell = newRow.insertCell()
+    newCell.innerHTML = "Orange"
+})
+
+const Raisin = document.getElementById("Raisin")
+
+Raisin.addEventListener("click", function() {
+    let newRow = Cart.insertRow()
+    let newCell = newRow.insertCell()
+    newCell.innerHTML = "Raisin"
+})
+
+const Poire = document.getElementById("Poire")
+
+Poire.addEventListener("click", function() {
+    let newRow = Cart.insertRow()
+    let newCell = newRow.insertCell()
+    newCell.innerHTML = "Poire"
+})
+
+const Orangine = document.getElementById("Orangine")
+
+Orangine.addEventListener("click", function() {
+    let newRow = Cart.insertRow()
+    let newCell = newRow.insertCell()
+    newCell.innerHTML = "Orangine"
+})
+
+const RemoveItem = document.getElementById("Remove")
+
+RemoveItem.addEventListener("click", function() {
+    document.getElementById("Panier").innerHTML = ""
+})
+
+
 console.log(addbutton)
 console.log(subbutton)
 console.log(multbutton)
