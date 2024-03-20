@@ -17,7 +17,6 @@
   body {
     animation: changebg 90s infinite;
     background-color: black;
-    background-position: left;
     background-size: 100%;
   }
   
