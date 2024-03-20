@@ -1,0 +1,180 @@
+.font {
+    font-size: 40px;
+    font-family: 'Calibri';
+  }
+
+.font2 {
+    font-size: 50px;
+    font-family: 'Calibri';
+  }
+
+.font3 {
+    font-size: 25px;
+    font-family: 'Calibri';
+    color: white;
+  }
+
+  body {
+    animation: changebg 90s infinite;
+    background-color: black;
+    background-position: left;
+    background-size: 100%;
+  }
+  
+  @keyframes changebg {
+    0% {
+      background-image: url('images/drac.jpg');
+    }
+    20% {
+      background-image: url('images/ecto.jpg');
+    }
+    30% {
+      background-image: url('images/luxray.jpg');
+    }
+    40% {
+      background-image: url('images/evolie.jpg');
+    }
+    50% {
+      background-image: url('images/noctaly.jpg');
+    }
+    60% {
+      background-image: url('images/garde.jpg');
+    }
+    70% {
+      background-image: url('images/phyla.jpg');
+    }
+    80% {
+      background-image: url('images/lugia.jpg');
+    }
+    90% {
+      background-image: url('images/arcanin.jpg');
+    }
+    100% {
+      background-image: url('images/drac.jpg');
+    }
+  }
+
+.img1 {
+  width: 22%;
+  height: 22%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  text-align: center;
+}
+
+input[type=text] {
+  width: 250px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('images/searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  background-size: 22px;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 30%;
+}
+
+#resultat {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pokemon {
+  width: 19%;
+  border: 2px solid white;
+  border-radius: 3%;
+  box-sizing: border-box;
+  backdrop-filter: blur(0.5px);
+  padding: 10px;
+  text-align: center;
+  margin: 0.5%;
+  transition: transform 0.3s; /* Ajoute une transition pour le redimensionnement */
+}
+
+.pokemon:hover {
+  animation: moveUp 0.3s ease-in-out forwards;
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.pokemon-sprite {
+  width: 150px;
+  height: 150px;
+}
+
+.pokemon-type {
+  color: white;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  width: 70px;
+  display: inline-block;
+  text-align: center;
+  font-size: 18px;
+}
+
+.load-more {
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: "Flexo-Demi", arial, sans-serif;
+    border-radius: 5px;
+    border: none;
+    line-height: 125%;
+    padding: 0.75em 1.25em 0.675em;
+    background-color: #30a7d7;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
+  background-color: #2090b7;
+}
+
+.back-to-top {
+  opacity: 0;
+  background-color: white;
+  visibility: hidden;
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  cursor: pointer; 
+  padding: 3px; 
+  border-radius: 100%; 
+  transition: opacity 0.5s ease, visibility 0.5s ease; 
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  background-color: #ccc; 
+}

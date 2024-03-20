@@ -159,10 +159,10 @@ function getCharactersDetails(characterURLs) {
             .then(characterData => {
               // ajoute les details du persos a filmDescription
               document.getElementById('filmDescription').innerHTML += `
-                <h2>${characterData.name}</h2>
+                <div class="font3"><h2>${characterData.name}</h2>
                 <p><strong>Genre : </strong>${characterData.gender}</p>
                 <p><strong>Année de naissance : </strong>${characterData.birth_year}</p>
-                <hr>
+                <hr></div>
               `
             })
         })
