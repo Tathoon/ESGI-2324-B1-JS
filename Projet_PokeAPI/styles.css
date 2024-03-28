@@ -177,3 +177,16 @@ input[type=text]:focus {
 .back-to-top:hover {
   background-color: #ccc; 
 }
+
+.pokemon-details-page .load-more {
+  display: none;
+}
+
+.pokemon2 {
+  width: 50%;
+  display: block;
+  backdrop-filter: blur(0.5px);
+  border: 2px solid white;
+  border-radius: 2%;
+  margin: 0 auto;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>PokeAPI</title>
+</head>
+<body class="pokemon-details-page">
+
+    <script src="index.js"></script>
+
+    <div id="pokemon-details"></div>
+
+    <audio id="background-music" autoplay>
+        <source src="audio/malie_city.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const pokemonId = urlParams.get('id');
+        const pokemonName = urlParams.get('name');
+        const pokemonImage = urlParams.get('image');
+        const pokemonType = urlParams.get('types');
+
+        const pokemonDetailsDiv = document.getElementById('pokemon-details');
+        pokemonDetailsDiv.innerHTML = `
+            <div class="center font3 pokemon2">
+            <h1>${pokemonName}</h1>
+            <p>ID: ${pokemonId}</p>
+            <p>Types: ${applyTypeColors(pokemonType).outerHTML}</p>
+            <img src="${pokemonImage}" alt="${pokemonName}" width="250px" height="250px" ></div>`;
+    </script>
+
+</body>
+</html>
