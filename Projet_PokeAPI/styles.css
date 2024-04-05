@@ -18,6 +18,7 @@
     animation: changebg 90s infinite;
     background-color: black;
     background-size: 100%;
+    background-attachment: fixed;
   }
   
   @keyframes changebg {
